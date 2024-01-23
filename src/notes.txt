@@ -1,0 +1,30 @@
+const Greet=({name}:{name:string})=>{
+    return <>
+    <h2>Hello,{name} how are you</h2>
+    </>
+};
+
+export default Greet;
+
+
+or
+
+type GreetProps={
+    name:string
+}
+
+
+const Greet=(props:GreetProps)=>{
+    return <>
+    <h2>Hello,{props.name} how are you</h2>
+    </>
+};
+
+export default Greet;
+
+
+    familyList:{
+        first:string,
+        last:string
+    }[]
+
